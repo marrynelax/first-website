@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Simple Website - Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -40,6 +40,14 @@
       </div>
     </section>
 
+<!-- Exemple 3 colones avec images -->
+
+<section id="section">
+    <div class="container">
+      <h1>Exemple 3 colones avec images</h1>
+    </div>
+  </section>
+
     <section id="boxes">
       <div class="container">
         <div class="box">
@@ -55,10 +63,211 @@
           <div class="box">
               <img src="./img/pin.png" >
               <h3>Graphic Design</h3>
-              <p> Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. Aenean ullamcorper congue posuere. Phasellus ut sem arcu. Suspendisse eget metus nibh. </p>
+              <p>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. Aenean ullamcorper congue posuere. Phasellus ut sem arcu. Suspendisse eget metus nibh.</p>
             </div>
       </div>
     </section>
+
+<!-- tester la functionalité Clear Float -->
+
+    <section id="section">
+        <div class="container">
+          <h1>Tester la fonctionalité clear float</h1>
+        </div>
+      </section>
+
+    <section id=test-clear-float>
+      <div class="container">
+        <div class="img">
+          <img src="./img/okey.png" style="width: 50px; height: 50px">
+        </div>
+        <div class="text">
+          <p> <i>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. Aenean ullamcorper congue posuere. Phasellus ut sem arcu. Suspendisse eget metus nibh.</i></p>
+        </div>
+    </div>
+    </section>
+
+
+    <!--Image avec zone clickable-->
+    <section id="section">
+        <div class="container">
+          <h1>Image avec zone clickable</h1>
+        </div>
+      </section>
+
+    <section id=image-maps>
+      <div class="container">
+        <h2> Image Maps</h2>
+        <p>Click on the image to verify which zone is clickable:</p>
+        <img src="./img/dog.jpg" height="450'" width="850" alt="Ckick on the dog" usemap="#dogmap" style="padding-bottom:20px">
+        <map name=dogmap>
+        <area shape="rect" coords="300,44,500,350" alt="Computer" href="portfolio.html">
+        </map>
+      </div>
+    </section>
+
+    <!--Change images then resizing browser -->
+    <section id="section">
+        <div class="container">
+          <h1>Flexible images</h1>
+        </div>
+      </section>
+
+    <section id=change-images>
+      <div class="container">
+        <h2> Picture element to add flexibility</h2>
+        <p>Rezise the the browser window to view how images change in dependency of the browser resolution</p>
+        <picture>
+           <source media="(min-width: 1000px)" srcset="./img/flower.jpg">
+           <source media="(min-width: 600px)" srcset="./img/cat.jpg">
+           <img src="./img/mouse.jpg" alt="Dog" style="padding-bottom:20px">
+        </picture>
+      </div>
+    </section>
+
+    <!--Table Exemple-->
+    <section id="section">
+        <div class="container">
+          <h1>Table Exemple</h1>
+        </div>
+      </section>
+
+    <section>
+       <div class="container" style="padding-bottom:10px">
+          <h2>This in en example of a table maded in HTML</h2>
+          <table id=first-table>
+            <caption>Donné personneles</caption>
+            <tr>
+              <th>Company name</th>
+              <th>Mail Adress</th>
+              <th>Contry</th>
+              <th colspan="2">Phones</th>
+            </tr>
+            <tr>
+              <td>Marina Moldovan</td>
+              <td>marina@mail.ro</td>
+              <td>Moldova</td>
+              <td>76 87 67</td>
+              <td>76 87 67</td>
+            </tr>
+            <tr>
+              <td>Elisabeta Alexei</td>
+              <td>lisa@mail.ro</td>
+              <td>Italia</td>
+              <td>76 87 67</td>
+              <td>76 87 67</td>
+            </tr>
+            <tr>
+                <td>Maria Trofim</td>
+                <td>maria@mail.ro</td>
+                <td>France</td>
+                <td rowspan="2">65 765 5667</td>
+              </tr>
+          </table>
+          <table>
+              <caption>Table with without any style</caption>
+              <tr>
+                <th>Company name</th>
+                <th>Mail Adress</th>
+                <th>Contry</th>
+                <th colspan="2">Phones</th>
+              </tr>
+              <tr>
+                <td>Marina Moldovan</td>
+                <td>marina@mail.ro</td>
+                <td>Moldova</td>
+                <td>76 87 67</td>
+                <td>76 87 67</td>
+              </tr>
+          </table>
+      </div>
+    </section>
+
+<!--Exemple of Description List-->
+
+    <section id="section">
+        <div class="container">
+          <h1>Exemple of a list</h1>
+        </div>
+      </section>
+
+     <div class="container"> 
+      <dl>
+        <dt>Coffee</dt>
+          <dd> - This is first exemple </dd>
+          <dd> - This is first exemple </dd>
+        <dt>Milk</dt>
+          <dd> - This is first exemple </dd>
+          <dd> - This is first exemple </dd>
+      </dl>
+    </div>
+
+<!--Exemple of Iframe-->
+
+<section id="section">
+  <div class="container">
+    <h1>Iframe Exemple</h1>
+  </div>
+</section>
+
+<div class="container">
+  <h2>Html Iframe Exemple</h2>
+  <p>This is a HTML Iframe exemple, feel free to test this exemple</p>
+  <iframe src="about.html" name="my-frame" style ="height: 200px; width:300px; border:2px solid rgb(78, 1, 74);"></iframe>
+  <p><a href="https://w3schools.com" target="my-frame">Click here to load page</a></p>
+</div>
+
+
+<!--Exemple of Javascript click me-->
+
+<section id="section">
+    <div class="container">
+      <h2>Click me to display something</h2>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2>This is Javascript exemple</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML= Date();">Click me to display date</button>
+    <p id="demo"></p>
+  </div>
+
+<!--Exemple of Javascript -change content-->
+
+<section id="section">
+    <div class="container">
+      <h2>Click me to change content</h2>
+    </div>
+  </section>
+
+  <div class="container">
+    <p>Java script can change content</p>
+    <p id="demo2" style="color:brown">je peux etre changé :)</p>
+    <button type="button" onclick="my2Function()">click me to change text</button>
+
+    <script>
+    function my2Function(){
+    document.getElementById("demo2").innerHTML="Hello Javascript";
+    document.getElementById("demo2").style.color="black";
+    document.getElementById("demo2").style.background="yellow";
+    }
+    </script>
+
+  </div>
+
+<!--Exemple of Javascript -change attributes-->
+  <section id="section">
+    <div class="container">
+      <h2>Click me to alternate images</h2>
+    </div>
+  </section>
+
+ <p>On click the images change</p>
+ <img id="myImage" src="active.jpg" widt>
+
+
+<!--Footer-->
+
     <footer>
       <p>Copyright Test 2018</p>
     </footer>

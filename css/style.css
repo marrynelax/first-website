@@ -28,6 +28,12 @@ ul{
 
 }
 
+.dark{
+    background: rgb(211, 211, 211);
+    padding: 10px;
+    
+}
+
 /*header*/
 header{
     background:#360136;
@@ -117,6 +123,12 @@ header #branding:hover{
     padding:4px;
 }
 
+/*section*/
+#section {
+    color:black;
+    background:rgb(61, 1, 61, 0.3);
+}
+
 /*boxes*/
 
 #boxes{
@@ -138,8 +150,91 @@ header #branding:hover{
 
 aside#sidebar{
     float:right;
-    width:30%;
-    
+    width:30%; 
+    padding: 20px;  
+}
+
+aside#sidebar .contact input, aside#sidebar .contact textarea{
+     width: 90%;
+     padding: 10px;
+}
+
+/*article*/
+
+article#main-col{
+    float:left;
+    width:65%;
+}
+
+/*portfolio*/
+
+ul#portfolio li{
+ list-style:none;
+ padding:20px;
+ background: rgb(255, 189, 189);
+ border:#ff0000 solid 1px; 
+ margin-bottom: 9px;   
+}
+
+
+/*test clear float */
+#test-clear-float{
+    background: rgb(177, 176, 176, 0.3);
+}
+
+#test-clear-float .img{
+    float: right;
+    padding-bottom: 20px;
+}
+#test-clear-float .text{
+    color:red;
+    clear:right;
+    padding: 10px;
+}
+
+/*table*/
+table#first-table{
+    font-family: arial;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table#first-table td, #first-table th{
+    border: 1px solid rgb(221, 221, 221);
+    text-align: center;
+    padding: 10px;
+}
+
+table#first-table tr:nth-child(even){
+    background-color: rgb(221, 221, 221, 0.3);
+}
+
+table#first-table th{
+    background-color:black;
+    color: #ffffff;
+}
+
+/*menu exemple*/
+
+#exemple-menu ul{
+    list-style-type: none;
+    background-color:burlywood;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#exemple-menu li{
+    float: left;
+}
+#exemple-menu a{
+    padding: 10px;
+    display: block;
+    color: rgb(87, 1, 48);
+    text-decoration: none;
+    text-align: center;
+}
+#exemple-menu a:hover{
+    background-color: aquamarine;
 }
 
 /*footer*/
@@ -152,6 +247,17 @@ footer{
     background:#360136;
 }
 
+
+/*Media Queries */
+@media(max-width:768px){
+    header #branding
+    header nav
+    header nav li{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+}
 
 
 
