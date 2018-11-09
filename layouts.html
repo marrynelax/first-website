@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Website - About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="layouts.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1> My Logo <span class="highlight">Space</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current"><a href="layouts.html">Layouts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+          <h1>This is my portfolio</h1>
+          <p>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. Aenean ullamcorper congue posuere. Phasellus ut sem arcu. Suspendisse eget metus nibh. </p>
+        </div>
+      </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter email">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+
+<!-- Exemple of layout using CCS Float -->
+
+    <div class=container>
+        <h1>Exemple 2</h1>
+        <h2>CCS LAYOUT FLOAT</h2>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+   
+        <div id="header-layout">
+            <h2>Float</h2>
+        </div>
+
+        <section>
+          <nav id="menu-layout">
+            <ul>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Paris</a></li>
+              <li><a href="#">Bruxelles</a></li>
+            </ul>
+          </nav>
+          <article id="article-layout">
+              <h1>London</h1>
+              <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            </article>
+        </section>
+
+        <footer style="background-color: brown;">
+            <p>This is a footer</p>
+        </footer>
+  </div>
+
+
+<!-- Exemple of layout using CCS Flexbox -->
+
+        <div class=container>
+            <h1>Exemple 2</h1>
+            <h2>CCS LAYOUT Flexbox</h2>
+            <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+            <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+       
+          <div id="header-layout-flexbox">
+              <h2>Flexbox</h2>
+          </div>
+    
+          <section id="flexbox"> 
+            <nav id="menu-layout-flexbox">
+              <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Bruxelles</a></li>
+              </ul>
+            </nav>
+            <article id="article-layout-flexbox">
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+              </article>
+          </section>
+    
+          <footer>
+              <p>This is a footer</p>
+          </footer>
+
+      </div>
+
+
+<!-- Exemple of responsive layout -->
+<br>
+
+
+<section class="container">
+    <div style="background-color: bisque; padding:15px;">
+        <h2 style="font-size: 3vw">Cinque Terre</h2>
+        <h3 style="font-size: 2vw">This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</h3>
+      </div>
+
+    <div style="overflow: auto">
+        <div class="menu">
+            <div class="menuitem">Menu Item 1</div>
+            <div class="menuitem">Menu Item 2</div>
+            <div class="menuitem">Menu Item 3</div>
+            <div class="menuitem">Menu Item 4</div>
+        </div>
+    
+        <div class="main">
+          <h2>The Walk</h2>
+           <p>Cras id ornare magna.<samp>Error!</samp> Etiam in nibh ultricies, <kbd>Ctrl + S</kbd>hendrerit ipsum eget, vestibulum odio. Aenean ullamcorper congue posuere. Phasellus ut sem arcu. Suspendisse eget metus nibh.</p>
+          <img src="img/showcase.jpg" style="width:100%">  
+        </div>
+    
+        <div class="right">
+          <h2>What?</h2>
+          <p>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. </p>
+          <h2>Where?</h2>
+          <p>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. </p>
+          <h2>Price</h2>
+          <p>Cras id ornare magna. Etiam in nibh ultricies, hendrerit ipsum eget, vestibulum odio. </p>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+
+  <div class="w3-container w3-teal">
+    <h1>My car</h1>
+  </div>
+
+  <div class="w3-container">
+    <p>Exemple of using w3 school framework</p>
+  </div>
+
+  <img src=img/sky.jpeg alt="Car" style="width:100%">
+  
+</div>
+
+
+  </body>
+</html>

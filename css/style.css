@@ -123,12 +123,6 @@ header #branding:hover{
     padding:4px;
 }
 
-/*section*/
-#section {
-    color:black;
-    background:rgb(61, 1, 61, 0.3);
-}
-
 /*boxes*/
 
 #boxes{
@@ -241,7 +235,7 @@ table#first-table th{
 
 footer{
     padding:20px;
-    margin-top:20px;
+    
     color:white;
     text-align:center;
     background:#360136;
@@ -250,14 +244,36 @@ footer{
 
 /*Media Queries */
 @media(max-width:768px){
-    header #branding
-    header nav
-    header nav li{
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    aside#sidebar,
+    article#main-col{
         float:none;
-        text-align: center;
+        text-align:center;
         width:100%;
     }
+    header,
+    #newsletter form{
+        padding-bottom: 20px;
+    }
+    #newsletter button, .contact button{
+        display:block;
+        width:100%;
+    }
+    #showcase h1{
+       margin-top: 40px; 
+    }
+    #newsletter form input[type="email"], .contact input, .contact textarea{
+        width:100%;
+        margin-bottom: 5px;
+    }
+
+    
 }
+
 
 
 

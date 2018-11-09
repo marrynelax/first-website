@@ -2,10 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Marina Moldovan">
+    <meta name="keywords" content="HTML, CSS, portfolio, XML, Javascript">
+    <meta http-equiv="refresh" content="30">
+    <meta name="discription" content="My first site for practice">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Simple Website - Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
+   
   </head>
   <body>
     <header>
@@ -17,7 +22,8 @@
           <ul>
             <li class="current" ><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">POrtfolio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="layouts.html">Layouts</a></li>
           </ul>
         </nav>
       </div>
@@ -106,7 +112,7 @@
       </div>
     </section>
 
-    <!--Change images then resizing browser -->
+    <!--Change images then resizing  / Show Different Images Depending on Browser Width -->
     <section id="section">
         <div class="container">
           <h1>Flexible images</h1>
@@ -164,6 +170,7 @@
                 <td rowspan="2">65 765 5667</td>
               </tr>
           </table>
+          <br>
           <table>
               <caption>Table with without any style</caption>
               <tr>
@@ -200,6 +207,11 @@
           <dd> - This is first exemple </dd>
           <dd> - This is first exemple </dd>
       </dl>
+
+      <div>
+        <p>Exemple of a link which open in a new window</p>
+        <p><a href="https://www.gmail.com" target="_blank">Gmail Link</a></p>
+      </div>
     </div>
 
 <!--Exemple of Iframe-->
@@ -262,8 +274,29 @@
     </div>
   </section>
 
- <p>On click the images change</p>
- <img id="myImage" src="active.jpg" widt>
+  <div class="container">
+      <p>On click the images change</p>
+      <img id="myImage" src="img/off.jpg" >
+      <div>
+         <button type="button" onclick="light(1)">Light On</button>
+         <button type="button" onclick="light(0)">Light Off</button>
+      </div>
+  </div>
+
+
+
+
+ <script>
+   function light(sw){
+     var pic;
+     if (sw==0) {
+       pic = "img/off.jpg"
+     } else {
+       pic = "img/on.jpg"
+     }
+     document.getElementById('myImage').src=pic;
+   }
+ </script>
 
 
 <!--Footer-->
